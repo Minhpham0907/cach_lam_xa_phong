@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công Thức Tỉ Lệ Nguyên Liệu & Hướng Dẫn Làm Xà Phòng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🛠️ Tính Tỉ Lệ Nguyên Liệu</h1>
+
+        <div class="input-group">
+            <label for="material-select">Bạn đã có nguyên liệu gì?</label>
+            <select id="material-select">
+                <option value="" disabled selected>-- Chọn nguyên liệu --</option>
+                <option value="NaOH">NaOH</option>
+                <option value="dau an">Dầu ăn</option>
+                <option value="dau dua">Dầu dừa</option>
+                <option value="nuoc cat">Nước cất</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="mass-input">Nhập khối lượng nguyên liệu đã có (gam):</label>
+            <input type="number" id="mass-input" placeholder="Ví dụ: 100" min="0">
+        </div>
+
+        <button onclick="calculate()">Tính toán</button>
+
+        <div id="result" class="result-box">
+            </div>
+
+        <div class="note">
+            <p>*Tỉ lệ này được chuyển đổi từ logic C++ đã cung cấp. Hãy kiểm tra lại công thức hóa học trước khi sử dụng thực tế.</p>
+        </div>
+    </div>
+    
+    <div class="container soap-making-guide">
+        <h2>🧼 Cách Làm Xà Phòng Từ Dầu Ăn/Mỡ Thừa</h2>
+        
+        <h3>1. Chuẩn Bị Nguyên Liệu</h3>
+        <ul>
+            <li>**Dầu ăn thừa:** Đã lọc bỏ cặn, tạp chất. Nên dùng **70% dầu thừa** và **30% dầu dừa nguyên chất** để tăng khả năng tẩy rửa.</li>
+            <li>**NaOH** (Sodium Hydroxide).</li>
+            <li>**Nước cất:** (Có thể dùng nước tinh khiết, nước chưng cất từ thảo mộc, hoặc nước đun cùng thảo mộc).</li>
+            <li>**Tinh dầu** (Sả, chanh, bạc hà tự nhiên, nếu có) để tạo mùi thơm và át mùi dầu mỡ cũ.</li>
+        </ul>
+
+        <h3>2. Quy Trình Thực Hiện</h3>
+        
+        <p class="step-warning">⚠️ **Bước 1: An toàn**</p>
+        <p>Đeo **găng tay, kính mắt bảo hộ** để đảm bảo an toàn.</p>
+        
+        <p class="step-heading">🧪 **Bước 2: Pha dung dịch kiềm**</p>
+        <ul>
+            <li>Đong **NaOH** vào ca đựng **nước cất** đã chuẩn bị.</li>
+            <li>Quấy nhẹ, nhiệt độ sẽ tăng lên rất nhanh.</li>
+            <li>Đảo đều và để riêng một góc, chờ nhiệt độ hạ xuống (đến **40 – 45 độ C**).</li>
+        </ul>
+        <blockquote class="note-important">
+            **Lưu ý quan trọng:** Luôn **đổ NaOH vào nước cất** (tuyệt đối không làm ngược lại) để đảm bảo an toàn, tránh bắn dung dịch kiềm nóng.
+        </blockquote>
+        
+        <p class="step-heading">🥣 **Bước 3: Trộn kiềm và dầu**</p>
+        <ul>
+            <li>Khi hỗn hợp nước cất và NaOH về khoảng **40 – 45 độ C**.</li>
+            <li>Đổ hỗn hợp này vào ca đựng **dầu** đã chuẩn bị. (Nhiệt độ của dầu tốt nhất trong khoảng **25 đến 35 độ C**).</li>
+        </ul>
+
+        <p class="step-heading">🥄 **Bước 4: Quấy hỗn hợp (Giai đoạn "Trace")**</p>
+        <ul>
+            <li>Dùng phới (đũa thủy tinh) quấy đều, từ nhẹ tới mạnh, liên tục cho tới khi hỗn hợp **đặc lại và có độ kết dính** (gọi là trạng thái "Trace").</li>
+            <li>Thông thường, quy trình này mất khoảng **45 phút tới 1 tiếng**. Nếu dùng máy xay cầm tay/máy đánh trứng, khâu này sẽ rút ngắn còn **5 – 10 phút**.</li>
+            <li>Nếu dùng tinh dầu, bạn cho vào trộn đều với hỗn hợp ở giai đoạn này.</li>
+        </ul>
+
+        <p class="step-heading">✨ **Bước 5: Đổ khuôn và ủ**</p>
+        <ul>
+            <li>Đổ xà phòng vào **khuôn**.</li>
+            <li>Đậy kín hoặc lấy giấy nến bọc lại, để qua đêm cho bánh xà phòng cứng lại.</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
